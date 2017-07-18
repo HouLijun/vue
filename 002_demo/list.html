@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>列表页</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/list.css">
+</head>
+<body>
+<div class="container">
+    <ul class="list" id="J_list">
+        <li class="item" v-for="item in list" v-bind:key="item.id">
+            <div class="thumbnail">
+                <img class="picture" v-bind:src="item.thumbnail" alt="">
+            </div>
+            <div class="introduce">
+                <h3 class="title">
+                    <a v-bind:href="'show.html?id='+item.id">{{item.title}}</a>
+                </h3>
+                <p class="abstract">{{item.abstract}}</p>
+                <div class="information">
+                    <span class="time">{{item.insertTime}}</span>
+                    <i>/</i>
+                    <span class="number">{{item.browseNumber}}人浏览</span>
+                </div>
+            </div>
+            <a class="check" v-bind:href="'show.html?id='+item.id">查看</a>
+        </li>
+    </ul>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/vue.js"></script>
+<script src="js/list.js"></script>
+</body>
+</html>

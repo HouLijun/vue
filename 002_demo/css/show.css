@@ -1,0 +1,63 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.container .crumbs {
+  padding: 18px 0 24px 0;
+  font-size: 12px;
+  color: #616161;
+}
+.container .crumbs .index:hover,
+.container .crumbs .classify:hover {
+  color: #12adff;
+  text-decoration: underline;
+}
+.container .detail {
+  border: 1px solid #d1d1d1;
+}
+.container .detail .title {
+  padding: 53px 0 20px 0;
+  font-size: 22px;
+  color: #12adff;
+  text-align: center;
+  line-height: 1em;
+}
+.container .detail .information {
+  margin-bottom: 35px;
+  font-size: 12px;
+  color: #555;
+  text-align: center;
+  line-height: 1em;
+}
+.container .detail .content {
+  padding: 0 60px;
+  margin-bottom: 50px;
+  line-height: 30px;
+}
+.container .back {
+  display: block;
+  width: 94px;
+  height: 30px;
+  margin: 0 auto 35px;
+  background: #12adff;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+}
+.container .back:hover {
+  opacity: 0.8;
+}
+.container .switchover {
+  padding: 0 60px;
+  margin-bottom: 45px;
+}
+.container .switchover .prev,
+.container .switchover .next {
+  margin-bottom: 14px;
+  color: #555;
+}
+.container .switchover .prev:hover,
+.container .switchover .next:hover {
+  color: #12adff;
+  text-decoration: underline;
+}

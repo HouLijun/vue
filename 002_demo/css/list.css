@@ -1,0 +1,76 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.container .list {
+  padding: 0 22px;
+}
+.container .item {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  padding-top: 27px;
+  padding-bottom: 33px;
+  border-bottom: 1px solid #dfdfdf;
+}
+.container .item .thumbnail {
+  float: left;
+  width: 308px;
+  height: 178px;
+  margin-right: 50px;
+}
+.container .item .thumbnail .picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.container .item .introduce {
+  float: left;
+  max-width: 700px;
+}
+.container .item .title {
+  margin: 29px 0 24px 0 ;
+  overflow: hidden;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  color: #12adff;
+  font-size: 18px;
+  line-height: 1em;
+}
+.container .item .title:hover {
+  text-decoration: underline;
+}
+.container .item .abstract {
+  overflow: hidden;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  color: #555;
+  line-height: 1em;
+}
+.container .item .information {
+  margin-top: 34px;
+  font-size: 12px;
+  color: #888896;
+  line-height: 1em;
+}
+.container .item .check {
+  position: absolute;
+  bottom: 72px;
+  right: 0;
+  -webkit-z-index: 100;
+  -moz-z-index: 100;
+  -ms-z-index: 100;
+  -o-z-index: 100;
+  z-index: 100;
+  width: 86px;
+  height: 28px;
+  background: #12adff;
+  color: #fff;
+  line-height: 28px;
+  text-align: center;
+}
+.container .item .check:hover {
+  opacity: .8;
+}
